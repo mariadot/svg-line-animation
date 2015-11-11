@@ -1,27 +1,24 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>.</title>
+        <title>SVG line CSS animation</title>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link type="text/css" rel="stylesheet" href="style.css">
         <style>
-            .leaf1, .leaf2 {
-                stroke:limegreen;
-            }
             .leaf1 {
                 stroke-dasharray:500;
                 stroke-dashoffset:500;
-                animation: dash 5.3s linear forwards infinite;
-                /*animation-play-state:paused;*/
-                
             }
             .leaf2 {
                 stroke-dasharray:450;
                 stroke-dashoffset:450;
-                animation: dash 5.3s linear forwards infinite;
                 animation-direction: reverse;
+            }
+            .leaf1, .leaf2 {
+                stroke:limegreen;
+                animation: dash 5.3s linear forwards infinite;
             }
             @keyframes dash {
                 to {
@@ -47,8 +44,5 @@
              id="path3767"
              style="fill:none;stroke-width:4.44710541;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1" /></svg>
     </body>
-    <script>
-        
-    </script>
 </html>
     
