@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>.</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link type="text/css" rel="stylesheet" href="style.css">
+        <style>
+            .leaf1, .leaf2 {
+                stroke:limegreen;
+            }
+            .leaf1 {
+                stroke-dasharray:500;
+                stroke-dashoffset:500;
+                animation: dash 5.3s linear forwards infinite;
+                /*animation-play-state:paused;*/
+                
+            }
+            .leaf2 {
+                stroke-dasharray:450;
+                stroke-dashoffset:450;
+                animation: dash 5.3s linear forwards infinite;
+                animation-direction: reverse;
+            }
+            @keyframes dash {
+                to {
+                    stroke-dashoffset:-400;
+                }
+            }
+        </style>
+    </head>
+    <body> 
+        <svg
+           xmlns:svg="http://www.w3.org/2000/svg"
+           xmlns="http://www.w3.org/2000/svg"
+           version="1.1"
+           width="100%"
+           height="100%"  
+           viewBox="0 0 500 500"        
+           id="svg2"><path class="leaf1"
+             d="m 84.444271,167.18823 c -5.660866,-35.21246 17.195589,-51.61667 17.195589,-51.61667 29.90888,7.38967 52.77953,-4.39529 64.81268,-20.796209 13.2032,-17.99567 13.13375,-41.736424 11.74552,-63.631126 -82.096072,13.84799 -89.518188,45.795407 -72.72132,72.772345 19.51105,-7.684662 29.21117,-18.501214 41.64429,-30.06148"
+             id="path2997"
+             style="fill:none;stroke-width:4.44710541;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1" />
+             <path class="leaf2"
+             d="M 53.308339,90.903072 C 58.566398,101.34057 66.414964,114.49212 78.888526,123.02703 93.798245,109.35892 91.457997,96.350717 83.350188,83.764418 81.098132,80.2684 61.240182,62.051001 37.543803,52.830233 c -9.073213,25.849492 -7.803164,45.230515 1.155898,58.718857 7.780318,11.71369 20.169687,20.47051 38.701606,21.59104"
+             id="path3767"
+             style="fill:none;stroke-width:4.44710541;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1" /></svg>
+    </body>
+    <script>
+        
+    </script>
+</html>
+    
